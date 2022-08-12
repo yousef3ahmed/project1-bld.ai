@@ -48,7 +48,6 @@
     height: 25px;
     top: 25px;
     left: 208px;
-    /* margin-right: 1245px; */
     position:absolute;
 }
 .shopicon{
@@ -119,17 +118,15 @@
     align-items: center;
 }
 .alarm{
-    width: 1400px;
     position: relative;
+    width: 100%;
 }
 .alarm2{
     display: none;
-    width: 350px;
     position: relative;
 }
 .text1{
     top: 15%;
-    width:400px;
     height: 185px;
     background:white;
     position:absolute;
@@ -175,16 +172,22 @@
     border: solid ;
     border-color: silver;
     margin-top: 20px;
-    margin-left: 120px;
-    width:1300px;
+    margin-left: 9%;
+    width: 80%;
     height: 700px;
     background:white;
-    position:absolute;
-    z-index: 1;
 }
+
+.text3s3{
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+
 .text3s1{
     margin-top: 32px;
     margin-left: 40px;
+    margin-bottom: 80px;
 }
 
 .text3s1 h1{
@@ -195,7 +198,6 @@
     background-color: white;
     width:110px;
     height: 35px;
-    margin-top: 22px;
     font-weight: bold;
     text-align: center;
     cursor:pointer;
@@ -212,83 +214,24 @@
 }
 
 .text3s2 img{
-    width: 230px;
+    width: 30px;
     margin-left: 20px;
 }
-.caption1{
+.courses{
     top: 400px;
-    width:230px;
-    height: 100px;
-    background:white;
-    position:absolute;
-    z-index: 1;
-    left: 3.5%;
+    width: 1;
+    background:rgb(112, 46, 46);
+    margin-left: auto;
     font-size: 14px;
 }
-.caption1 p{
+.courses img{
+    width: 100%;
+}
+.courses p{
     margin-top: 5px;
     font-size: 12px;
 }
 
-.caption2{
-    top: 400px;
-    width:230px;
-    height: 100px;
-    background:white;
-    position:absolute;
-    z-index: 1;
-    left: 22.5%;
-    font-size: 14px;
-}
-.caption2 p{
-    margin-top: 5px;
-    font-size: 12px;
-}
-
-.caption3{
-    top: 400px;
-    width:230px;
-    height: 100px;
-    background:white;
-    position:absolute;
-    z-index: 1;
-    left: 42.2%;
-    font-size: 14px;
-}
-.caption3 p{
-    margin-top: 5px;
-    font-size: 12px;
-}
-
-.caption4{
-    top: 400px;
-    width:230px;
-    height: 100px;
-    background:white;
-    position:absolute;
-    z-index: 1;
-    left: 61.5%;
-    font-size: 14px;
-}
-.caption4 p{
-    margin-top: 5px;
-    font-size: 12px;
-}
-
-.caption5{
-    top: 400px;
-    width:230px;
-    height: 100px;
-    background:white;
-    position:absolute;
-    z-index: 1;
-    left: 80.5%;
-    font-size: 14px;
-}
-.caption5 p{
-    margin-top: 5px;
-    font-size: 12px;
-}
 
 
 @media screen and (max-width: 1000px ) {
@@ -333,6 +276,10 @@
         position: relative;
         left: 0.5%;
         margin-top: -20px;
+    }
+    .text3s3{
+        display:flex
+
     }
     .alarm-container{
         margin-bottom: 250px;
