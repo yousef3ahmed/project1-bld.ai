@@ -14,7 +14,14 @@
             
             <div><img class="search-icon" src="../static/images/search_icon.png"></div>
             
-            <div class="searchbar"> <input style="padding-left: 40px;" type="text" title="Search" placeholder="Search for anything"></div>
+            <div class="searchbar"  > 
+               
+                <form onsubmit="return doForm()"  >
+                    <input style=" width: 100%;" type="text" title="Search" placeholder="Search for anything" id="search" >
+                    <input type="submit" style="visibility:hidden">
+                </form>
+                
+            </div>
             
             <div><a class="nav-text">Udemy Business</a></div>
         
@@ -63,43 +70,31 @@
                 <div> <button class = "explore"> Explore Python</div>
             </article>
    
-            <div class="text3s3" id="box" >
-
-                <!-- <div class="courses" >
-                    <img src="../static/images/python1.PNG">
-                    <h1> Learn Python: The Complete Python Programming Course</h1>
-                    <p>Avinash Jain, The Codex</p>
-                </div>
-
-                <div class="courses" >
-                   <img src="../static/images/python2.PNG">
-                    <h1> Learning Python for Data Analysis and Visualization</h1>
-                    <p>Jose Portilla</p>
-                </div>
-
-                <div class="courses" >
-                    <img src="../static/images/python3.PNG">
-                    <h1> Python for Beginners - Learn Programming from scratch</h1>
-                    <p>Edwin Diaz, Coding Faculty Solutions</p>
-                </div>
-
-                <div class="courses" >
-                    <img src="../static/images/python4.PNG">
-                    <h1> Learn Python: Python for Beginners</h1>
-                    <p>Abrar Hussain</p>
-                </div>
-
-                <div class="courses" >
-                    <img  src="../static/images/python5.PNG">
-                    <h1> Python Beyond the Basics - Object-Oriented Programming</h1>
-                    <p>Infinite Skills</p>
-                </div> -->
-
-            </div>
+            <div class="text3s3" id="box" > </div>
         </div>   
         
-        <script src="post.js" > </script>
-        <script> listsPosts( 'box' ) </script>
+      <script src="post.js" >   listsPosts( 'box' , "" )  </script>
+      <script>   listsPosts( 'box' , "" )  </script>
+
+       <script>       
+             let value = "" ;
+             function doForm(){   
+                var data = new FormData();
+                data.append( "" , document.getElementById("search").value );
+                for (let x of data.entries()) { 
+                    
+                    let out = x.toString() ; 
+                    for( let i = 1 ; i < out.length ; i++ ) value += out.charAt( i ) ;
+                    console.log(value); 
+                }
+                listsPosts( 'box' , value )
+                value = "";
+                return false ;
+                
+             }
+
+        </script>
+
 
     </body>
 

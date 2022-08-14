@@ -32,8 +32,13 @@
     display: flex;
     flex-grow: 1;
 } 
-.searchbar input{
+.searchbar form{
+    display: flex;
+    flex-grow: 1;
+}
+.searchbar form input{
     height: 3px;
+   
     border: 1px solid #1c1d1f;
     border-radius: 100px;
     text-align: left;
@@ -174,12 +179,13 @@
     margin-top: 20px;
     margin-left: 9%;
     width: 80%;
-    height: 700px;
+    height: auto;
     background:white;
 }
 
 .text3s3{
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     align-content: center;
 }
@@ -220,14 +226,14 @@
 .courses{
     top: 400px;
     width: 1;
-    background:rgb(112, 46, 46);
+    background:rgb(255, 255, 255);
     margin-left: auto;
     font-size: 14px;
 }
-.courses img{
-    width: 100%;
+.coursesImg{
+    /* width: 100%; */
 }
-.courses p{
+.coursesP{
     margin-top: 5px;
     font-size: 12px;
 }
@@ -257,9 +263,11 @@
         display: flex;
     }
     .nav-container{
-        justify-content: left;
+        justify-content: center;
+        display: flex;
     }
     .icon{
+        display: flex;
         margin-left: 40%;
     }
     .alarm{

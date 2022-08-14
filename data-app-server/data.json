@@ -1,16 +1,11 @@
 {
 
     "courses": [  
-	  { "id": 1,
-		  "title": "Avinash Jain, The Codex",
-			"description": "Learn Python: The Complete Python Programming Course" ,
-			"image":"../static/images/python1.PNG"
-	  } ,
-	  { "id": 2,
-		  "title": "Jose Portilla",
-			"description": "Learning Python for Data Analysis and Visualization" ,
-			"image":"../static/images/python2.PNG"
-	  },
+      { "id": 2,
+        "title": "Jose Portilla",
+        "description": "Learning Python for Data Analysis and Visualization" ,
+        "image":"../static/images/python2.PNG"
+      },
       { 
         "id": 3,
         "title": "Edwin Diaz, Coding Faculty Solutions",
@@ -28,7 +23,12 @@
         "title": "Infinite Skills",
         "description": "Python Beyond the Basics - Object-Oriented Programming" ,
         "image":"../static/images/python5.PNG"
-      }
+      },
+      { "id": 1,
+		  "title": "Avinash Jain, The Codex",
+			"description": "Learn Python: The Complete Python Programming Course" ,
+			"image":"../static/images/python1.PNG"
+	    }
       
 	]
 }
