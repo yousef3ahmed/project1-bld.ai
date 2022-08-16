@@ -1,6 +1,12 @@
 {
 
-    "courses": [  
+  "Python": [  
+
+      { "id": 1,
+		  "title": "Avinash Jain, The Codex",
+			"description": "Learn Python: The Complete Python Programming Course" ,
+			"image":"../static/images/python1.PNG"
+	    },
       { "id": 2,
         "title": "Jose Portilla",
         "description": "Learning Python for Data Analysis and Visualization" ,
@@ -22,13 +28,194 @@
         "id": 5,
         "title": "Infinite Skills",
         "description": "Python Beyond the Basics - Object-Oriented Programming" ,
-        "image":"../static/images/python5.PNG"
-      },
-      { "id": 1,
-		  "title": "Avinash Jain, The Codex",
-			"description": "Learn Python: The Complete Python Programming Course" ,
-			"image":"../static/images/python1.PNG"
-	    }
-      
-	]
+        "image":"https://img-c.udemycdn.com/course/750x422/577248_3b6f_13.jpg"
+      } 
+	],
+  
+  "Excel": [  
+
+    { "id": 1,
+    "title": "Top courses in Excel",
+    "description": "Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software." ,
+    "image":"https://img-c.udemycdn.com/course/750x422/31535_e351_7.jpg"
+    },
+    { "id": 2,
+      "title": "Microsoft Excel 2013  Advanced.",
+      "description": "Become A Expert And Learn To Use Excel Like A Pro With This Advanced Excel Training" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/39292_b3f3_9.jpg"
+    },
+    { 
+      "id": 3,
+      "title": "Microsoft Excel - From Beginner to Expert in 6 Hours",
+      "description": "This Microsoft Excel class will make you a master of Microsoft Excel" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/49250_a658_8.jpg"
+    },
+    { 
+      "id": 4,
+      "title": "Sharper skills using Microsoft Excel 2010 for business",
+      "description": "Learn how to effectively use Microsoft Excel 2010 to modify" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/51078_15b7_8.jpg"
+    },
+    { 
+      "id": 5,
+      "title": "Learn Microsoft Excel 2013 - Advanced",
+      "description": "Insider Method: Learn Advanced Techniques for Microsoft Excel 2013 Fast" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/56660_5635_3.jpg"
+    } 
+  ],
+  "Web": [  
+
+    { "id": 1,
+    "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
+    "description": "Complete coverage of HTML, CSS, Javascript while you Earn Four Respected Certifications" ,
+    "image":"https://img-c.udemycdn.com/course/750x422/11475_9dac_14.jpg"
+    },
+    { "id": 2,
+      "title": "The Complete 2020 Fullstack Web Developer Course",
+      "description": "Learn HTML5, CSS3, JavaScript, Python, Wagtail CMS, PHP & MySQL from scratch!" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/19332_6b49_15.jpg"
+    },
+    { 
+      "id": 3,
+      "title": "Introduction to Web Development",
+      "description": "Are you Interested in Learning Web Development? " ,
+      "image":"https://img-c.udemycdn.com/course/750x422/99986_6cb4_10.jpg"
+    },
+    { 
+      "id": 4,
+      "title": "Running a Web Development Business: The Complete Guide",
+      "description": "Learn how to start and grow a successful web development business." ,
+      "image":"https://img-c.udemycdn.com/course/750x422/369662_7246_2.jpg"
+    },
+    { 
+      "id": 5,
+      "title": "Ultimate Web Designer & Web Developer Course",
+      "description": "Become a Full-Stack Web Designer in 2022 - Learn Everything about Web Design" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/446134_383c_3.jpg"
+    } 
+  ],
+  "JavaScript": [  
+
+    { "id": 1,
+    "title": "Javascript for Beginners",
+    "description": "Learn javascript online and supercharge your web design with this Javascript" ,
+    "image":"https://img-c.udemycdn.com/course/750x422/8324_fa84_13.jpg"
+    },
+    { "id": 2,
+      "title": "1 Hour JavaScript",
+      "description": "Learn how to code in JavaScript in 1 hour. This class is set up for complete beginners!" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/63612_8797_4.jpg"
+    },
+    { 
+      "id": 3,
+      "title": "JavaScript: Understanding the Weird Parts",
+      "description": "An advanced JavaScript course for everyone! Scope, closures, prototypes " ,
+      "image":"https://img-c.udemycdn.com/course/750x422/364426_2991_6.jpg"
+    },
+    { 
+      "id": 4,
+      "title": "Javascript for Beginners Learn by Doing Practical Exercises",
+      "description": "JavaScript for Beginners : Work closely with me doing exercises & learn more." ,
+      "image":"https://img-c.udemycdn.com/course/750x422/405818_aa3f_3.jpg"
+    },
+    { 
+      "id": 5,
+      "title": "JavaScript from Beginner to Expert",
+      "description": "Become a JavaScript expert in 30 days, even if you are a JS beginner." ,
+      "image":"https://img-c.udemycdn.com/course/750x422/426196_3cb8_4.jpg"
+    } 
+  ],
+  "Data": [  
+
+    { "id": 1,
+    "title": "Data Science A-Z™: Real-Life Data Science Exercises Included",
+    "description": "Learn Data Science step by step through real Analytics examples. Data Mining, Modeling" ,
+    "image":"https://img-c.udemycdn.com/course/750x422/513244_b831_4.jpg"
+    },
+    { "id": 2,
+      "title": "Machine Learning, Data Science and Deep Learning with Python",
+      "description": "Complete hands-on machine learning tutorial with data science, Tensorflow" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/671576_a272_4.jpg"
+    },
+    { 
+      "id": 3,
+      "title": "Data Science: Deep Learning and Neural Networks in Python",
+      "description": "The MOST in-depth look at neural network theory for machine learning. " ,
+      "image":"https://img-c.udemycdn.com/course/750x422/713104_d4cb.jpg"
+    },
+    { 
+      "id": 4,
+      "title": "R Programming A-Z™: R For Data Science With Real Exercises!",
+      "description": "Learn Programming In R And R Studio. Data Analytics, Data Science" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/765242_2578_6.jpg"
+    },
+    { 
+      "id": 5,
+      "title": "Data Science and Machine Learning Bootcamp with R",
+      "description": "Learn how to use the R programming language for data science and machine learning" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/821726_8071.jpg"
+    } 
+  ],
+  "AWS": [  
+
+    { "id": 1,
+    "title": "Amazon Web Services (AWS) Certified 2022 - 4 Certifications!",
+    "description": "Videos, labs & practice exams - AWS Certified (Solutions Architect, Developer, SysOps)." ,
+    "image":"https://img-c.udemycdn.com/course/750x422/1047846_83ef_29.jpg"
+    },
+    { "id": 2,
+      "title": "AWS Certified Security Specialty 2022",
+      "description": "All you need to master AWS Certified Security Specialty certification." ,
+      "image":"https://img-c.udemycdn.com/course/750x422/1102458_d6e6_2.jpg"
+    },
+    { 
+      "id": 3,
+      "title": "Part 1: AWS Certified Solutions Architect SAA C03 [Updated]",
+      "description": "AWS Associate Exam - Master Foundations. Join Live Study Group Q&A!" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/1135330_0e31_10.jpg"
+    },
+    { 
+      "id": 4,
+      "title": "Practice Test AWS Solutions Architect Associate SAA C03",
+      "description": "[Updated] In One Hour, You will Gain Substantial Insight to Pass the Certification Exam." ,
+      "image":"https://img-c.udemycdn.com/course/750x422/1162310_5ee3_4.jpg"
+    },
+    { 
+      "id": 5,
+      "title": "AWS Certified Solution Architect - Associate",
+      "description": "Includes 2 Practice Tests - 130 Practice Test Questions" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/1236626_b910_4.jpg"
+    } 
+  ],
+  "Drawing": [  
+
+    { "id": 1,
+    "title": "The Secrets to Drawing",
+    "description": "A comprehensive video and ebook course designed for people wanting to learn the core concepts of drawing." ,
+    "image":"https://img-c.udemycdn.com/course/750x422/137230_76b8_2.jpg"
+    },
+    { "id": 2,
+      "title": "Drawing and Sketching for Beginners",
+      "description": "Learn how to sketch and draw with easy to follow videos and exercises. No experience required!" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/382394_63fa_7.jpg"
+    },
+    { 
+      "id": 3,
+      "title": "Building Confidence Through Drawing: Art for Beginners",
+      "description": "22 Drawing Lessons for Beginners. Course is perfect for engaging after-school activities" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/633084_1961_2.jpg"
+    },
+    { 
+      "id": 4,
+      "title": "Art for Kids & Beginners: 15 Easy Drawing & Painting Lessons",
+      "description": "Students Will Learn How to Draw & Watercolor Paint 15 Cute Animals Step-By-Step." ,
+      "image":"https://img-c.udemycdn.com/course/750x422/670050_69ff_3.jpg"
+    },
+    { 
+      "id": 5,
+      "title": "The Ultimate Drawing Course - Beginner to Advanced",
+      "description": "Learn the #1 most important building block of all art, Drawing. This course will teach you how to draw like a pro!" ,
+      "image":"https://img-c.udemycdn.com/course/750x422/874012_c7f2_3.jpg"
+    } 
+  ]
 }

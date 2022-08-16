@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="../static/style/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     </head>
     <body>
         <nav class="nav-container">
@@ -12,10 +13,9 @@
             
             <div><a class="nav-text">Categories</a></div>
             
-            <div><img class="search-icon" src="../static/images/search_icon.png"></div>
+            <!-- <div><img class="search-icon" src="../static/images/search_icon.png"></div> -->
             
             <div class="searchbar"  > 
-               
                 <form onsubmit="return doForm()"  >
                     <input style=" width: 100%;" type="text" title="Search" placeholder="Search for anything" id="search" >
                     <input type="submit" style="visibility:hidden">
@@ -43,61 +43,45 @@
                     <h1> New to Udemy? Lucky you.</h1>
                     <p>Courses start at E€169.99. Get your new-student offer before it expires.</p>
                 </div>
-
             </div>
         </section>
         
+
         <section class="text2">
             <h1>A broad selection of courses</h1>
             <p>Choose from 185,000 online video courses with new addtions published every month</p>
-            <div class="kind">
-                <div style="color:black;">Python</div>
-                <div>Excel</div>
-                <div>Web Development</div>
-                <div>JavaScript</div>
-                <div>Data Science</div>
-                <div>AWS Certification</div>
-                <div>Drawing</div>
-                </div>
+           
+            <button type="button" class="btn btn-primary mb-2" id="Python" value="Python" onclick= "Choose( 'Python' )"  >Python</button>
+            <button type="button" class="btn btn-primary mb-2" id="Excel" value="Excel" onclick= "Choose( 'Excel' )"  >Excel</button>
+            <button type="button" class="btn btn-primary mb-2" id="Web" value="Web" onclick= "Choose( 'Web' )" >Web Development</button>
+            <button type="button" class="btn btn-primary mb-2" id="JavaScript" value="JavaScript" onclick= "Choose( 'JavaScript' )" >JavaScript</button>
+            <button type="button" class="btn btn-primary mb-2" id="Data" value="Data" onclick= "Choose( 'Data' )" >Data Science</button>
+            <button type="button" class="btn btn-primary mb-2" id="AWS" value="AWS" onclick= "Choose( 'AWS' )" >AWS Certification</button>
+            <button type="button" class="btn btn-primary mb-2" id="Drawing" value="Drawing" onclick= "Choose( 'Drawing' )" >Drawing</button>
+
         </section>
         
         <div class="text3">
             <article class="text3s1">
-                <h1>Expand your career opportunities with Python</h1>
-                <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language.</p>
-                <p>Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning.</p>
+                <h1>Expand your career opportunities with Python, Excel, Web Development, JavaScript... </h1>
+                <p>Take one of Udemy’s range of courses and learn how to code using this incredibly useful language.</p>
+                <p>Its simple syntax and readability makes  perfect for Flask, Django, data science, and machine learning.</p>
                 <p>You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...</p>
-                <div> <button class = "explore"> Explore Python</div>
+                <div> <button class = "explore"> Explore </div>
             </article>
-   
-            <div class="text3s3" id="box" > </div>
-        </div>   
+            
+
+            <div class="text3s3" id="box" > </div>        
+        </div>  
         
-      <script src="post.js" >   listsPosts( 'box' , "" )  </script>
-      <script>   listsPosts( 'box' , "" )  </script>
-
-       <script>       
-             let value = "" ;
-             function doForm(){   
-                var data = new FormData();
-                data.append( "" , document.getElementById("search").value );
-                for (let x of data.entries()) { 
-                    
-                    let out = x.toString() ; 
-                    for( let i = 1 ; i < out.length ; i++ ) value += out.charAt( i ) ;
-                    console.log(value); 
-                }
-                listsPosts( 'box' , value )
-                value = "";
-                return false ;
-                
-             }
-
-        </script>
+ 
+        
+        
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <script src="post.js" > </script>
+      <script>   listsPosts( 'box' , "" , "Python" )  </script>
 
 
-    </body>
-
-  
+    </body>  
 
 </html>
