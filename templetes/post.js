@@ -6,43 +6,87 @@ function ok( big , small ){
 }  
 
 let curCorce = "" ;
-
 function listsPosts( id , value , compare ){
 
     const box = document.getElementById(id);
-  
     while (box.firstChild) {
         box.removeChild(box.lastChild);
       }
+    
+    let Source = 'http://localhost:5400/' ;
+    fetch(`${Source}${compare}`).then(response => {
+        console.log(response);
+        return response.json();
+      }).then(data => {
+        // Work with JSON data here
+        curCorce = compare ;
 
-    fetch('../data-app-server/data.json')
-    .then(response => response.json())
-    .then(json => {
+        var first4 = 1 ;
+        const stack = document.createElement('div') ;
+        stack.setAttribute('class' , 'carousel-item active');
         
-        for (const key in json) {
-            
+        const stack2 = document.createElement('div') ;
+        stack2.setAttribute('class' , 'carousel-item');
 
-            if( key.includes( compare )  ){
-                curCorce = compare ;
-                for (const key2 in json[key]) {
-                    let big = json[key][key2].description ;
-                    
-                    if( ok( big , value ) == true ){
-                        box.appendChild( postCourse( json[key][key2] ) );
-                    }
-                         
+        const wraaap = document.createElement( 'div' ) ;
+        wraaap.setAttribute( 'class' , 'cards-wrapper' ) ;
+
+        const wraaap2 = document.createElement( 'div' ) ;
+        wraaap2.setAttribute( 'class' , 'cards-wrapper' ) ;
+
+        let cnt = 0 ;
+        for (const key in data) {
+            let big = data[key].description ;
+            
+            if( ok( big , value ) == true  &&  first4 == 1 ){
+                wraaap.appendChild( postCourse( data[key] ) );
+                cnt++ ;
+                if( cnt%4 == 0  ){
+                    stack.appendChild( wraaap ) ;
+                    box.appendChild( stack );
+                    first4 = 0 ;
                 }
-            }   
-        }    
-    });
+            }else if( ok( big , value ) == true  &&  first4 == 0 ){
+                wraaap2.appendChild( postCourse( data[key] ) );
+            }
+            
+        }
+
+        if( first4 ){
+            stack.appendChild( wraaap ) ;
+            box.appendChild( stack );
+        }
+        
+        if( !first4 ){
+            stack2.appendChild( wraaap2 ) ;
+            box.appendChild( stack2 );
+        }
+       
+
+        console.log(data);
+      }).catch(err => {
+        // Do something for an error here
+        console.log("Error Reading data " + err);
+      });
 
 }
 
 function postCourse( post ){
 
+
+
     const Course = document.createElement('div');
     Course.setAttribute('class' , 'card');
-    Course.style = "width: 18rem;"
+    Course.style = "width: 15rem;"
+
+    // Course.innerHTML = ` 
+    
+    // <h2  >
+    //     ${
+    //         post.
+    //     }
+    // </h2>
+    // `
 
     const IMG = document.createElement('img');
     IMG.src = post.image ;
@@ -73,7 +117,6 @@ function postCourse( post ){
 
 
     Course.appendChild( innerDiv );
-    
 
     return Course;
 }
@@ -98,11 +141,9 @@ function doForm(){
 }
 
 
-
-
-
 function Choose( string ){
     let x =  document.getElementById(string).value;
+    console.log( string );
     listsPosts( 'box' , "" , string );
  }
  
