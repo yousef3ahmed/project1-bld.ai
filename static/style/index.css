@@ -26,6 +26,8 @@
  }
  .nav-text{
     margin-left: 15px;
+    text-decoration: none;
+    color: #1c1d1f;
  }
  .searchbar {
     display: flex;
