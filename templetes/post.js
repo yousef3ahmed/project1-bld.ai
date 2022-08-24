@@ -21,47 +21,65 @@ function listsPosts( id , value , compare ){
         // Work with JSON data here
         curCorce = compare ;
 
-        var first4 = 1 ;
-        const stack = document.createElement('div') ;
-        stack.setAttribute('class' , 'carousel-item active');
-        
-        const stack2 = document.createElement('div') ;
-        stack2.setAttribute('class' , 'carousel-item');
-
-        const wraaap = document.createElement( 'div' ) ;
+        let wraaap = document.createElement( 'div' ) ;
         wraaap.setAttribute( 'class' , 'cards-wrapper' ) ;
-
-        const wraaap2 = document.createElement( 'div' ) ;
-        wraaap2.setAttribute( 'class' , 'cards-wrapper' ) ;
 
         let cnt = 0 ;
         for (const key in data) {
             let big = data[key].description ;
             
-            if( ok( big , value ) == true  &&  first4 == 1 ){
-                wraaap.appendChild( postCourse( data[key] ) );
-                cnt++ ;
-                if( cnt%4 == 0  ){
-                    stack.appendChild( wraaap ) ;
-                    box.appendChild( stack );
-                    first4 = 0 ;
+            if( ok( big , value ) == true  ){
+               
+                let width = window.screen.width ;
+
+                if( width >= 768 ){
+                    wraaap.appendChild( postCourse( data[key] ) );
+                    cnt++ ;
+                    if( cnt%4 == 0  ){
+    
+                        const stack = document.createElement('div') ;
+    
+                        if( cnt == 4 )
+                            stack.setAttribute('class' , 'carousel-item active');
+                        else    
+                            stack.setAttribute('class' , 'carousel-item');
+                       
+                        stack.appendChild( wraaap ) ;
+                        box.appendChild( stack );
+                        
+                        wraaap = document.createElement( 'div' ) ;
+                        wraaap.setAttribute( 'class' , 'cards-wrapper' ) ;
+                    }
+                }else{
+                    wraaap.appendChild( postCourse( data[key] ) );
+                    cnt++ ;
+                    if( cnt%1 == 0  ){
+    
+                        const stack = document.createElement('div') ;
+                        if( cnt == 1 )
+                            stack.setAttribute('class' , 'carousel-item active');
+                        else    
+                            stack.setAttribute('class' , 'carousel-item');
+                       
+                        stack.appendChild( wraaap ) ;
+                        box.appendChild( stack );
+                        
+                        wraaap = document.createElement( 'div' ) ;
+                        wraaap.setAttribute( 'class' , 'cards-wrapper' ) ;
+                    }
                 }
-            }else if( ok( big , value ) == true  &&  first4 == 0 ){
-                wraaap2.appendChild( postCourse( data[key] ) );
+              
             }
-            
         }
 
-        if( first4 ){
+        if( wraaap.firstChild ){
+            
+            const stack = document.createElement('div') ;
+            stack.setAttribute('class' , 'carousel-item');
+
             stack.appendChild( wraaap ) ;
             box.appendChild( stack );
         }
-        
-        if( !first4 ){
-            stack2.appendChild( wraaap2 ) ;
-            box.appendChild( stack2 );
-        }
-       
 
         console.log(data);
       }).catch(err => {

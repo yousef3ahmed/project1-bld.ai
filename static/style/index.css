@@ -262,6 +262,13 @@
 }
 
 
+.carousel-control-prev-icon {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/user-interface-solid-23/24/Arrow_Left_Square-512.png') !important;
+   }
+   
+.carousel-control-next-icon {
+     background-image: url("https://cdn0.iconfinder.com/data/icons/user-interface-solid-23/24/Arrow_Right_Square-512.png") !important;
+   }
 
 
 /* -------------------------------------------------------------- */
